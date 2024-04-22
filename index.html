@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATLAS Corporation</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <div class="logo">
+                <img src="ATLAS_BANNER.png" alt="Logo">
+            </div>
+            <span class="logo-text">ATLAS Corporation V2</span>
+        </div>
+        <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Gib Koordinaten ein (x,y)">
+        <button type="button" onclick="searchLocation()">Suchen</button>
+</div>
+
+    </header>
+
+    <main>
+        <div class="map" onclick="getCoordinates(event)">
+            <img src="V33Map.png" alt="Karte" id="mapImage">
+            <div id="pulse"></div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="coordinates-output">
+            <h2>Koordinaten:</h2>
+            <textarea id="coordinatesOutput" readonly></textarea>
+        </div>
+    </footer>
+
+<script>
+
+function getCoordinates(event) {
+    var map = document.getElementById('mapImage');
+    var rect = map.getBoundingClientRect();
+    var x = event.clientX - rect.left;
+    var y = event.clientY - rect.top;
+
+    // Beispielberechnung der Koordinaten basierend auf Pixelpositionen
+    var mapWidth = map.width; // Breite des Bildes in Pixel
+    var mapHeight = map.height; // Höhe des Bildes in Pixel
+    var latitude = ((y / mapHeight) * 180) - 90; // Breitengrad (von -90 bis 90)
+    var longitude = ((x / mapWidth) * 360) - 180; // Längengrad (von -180 bis 180)
+
+    // Ausgabe der berechneten Koordinaten
+    var coordinatesOutput = document.getElementById('coordinatesOutput');
+    coordinatesOutput.value = "Breitengrad: " + latitude.toFixed(2) + ", Längengrad: " + longitude.toFixed(2);
+
+    // Erstelle den roten Punkt (pulse) an der Klickposition
+    var pulse = document.getElementById('pulse');
+    pulse.style.left = (event.clientX - 10) + 'px'; // Setze die X-Position des Punktes
+    pulse.style.top = (event.clientY - 10) + 'px'; // Setze die Y-Position des Punktes
+
+    // Entferne die CSS-Klasse, falls sie bereits hinzugefügt wurde
+    pulse.classList.remove('pulse-animation');
+
+    // Timeout verwenden, um sicherzustellen, dass die Klasse erst nach der Positionierung hinzugefügt wird
+    setTimeout(function() {
+        // Füge CSS-Klasse hinzu, um die Pulsierung zu starten
+        pulse.classList.add('pulse-animation');
+    }, 10);
+}
+
+function searchLocation() {
+    var coordinatesInput = document.getElementById('searchInput').value.trim();
+    var coordinatesArray = coordinatesInput.split(',');
+    var latitude = parseFloat(coordinatesArray[0]);
+    var longitude = parseFloat(coordinatesArray[1]);
+
+// Überprüfen, ob der Breitengrad außerhalb des Bereichs liegt
+if (latitude > 90 || latitude < -90) {
+    alert("Ungültige Koordinaten! Der Breitengrad muss zwischen -90 und 90 liegen.");
+    return;
+}
+
+// Bestimmen des Vorzeichens basierend auf der Position des Punktes
+// Wenn der Punkt über dem Zentrum der Karte liegt, ist die Latitude positiv, sonst negativ
+var centerY = mapHeight / 2;
+var latitudeSign = (y < centerY) ? 1 : -1;
+latitude *= latitudeSign;
+
+    // Koordinatenmuster für Breitengrad und Längengrad (Beispiel: 51.5074, -0.1278)
+    var coordinatePattern = /^-?\d+(\.\d{1,2})?,\s?-?\d+(\.\d{1,2})?$/;
+
+    if (coordinatePattern.test(coordinatesInput)) {
+        // Position des pulsierenden Kreises aktualisieren
+        var map = document.getElementById('mapImage');
+        var rect = map.getBoundingClientRect();
+        var mapWidth = rect.width;
+        var mapHeight = rect.height;
+        var x = (longitude + 180) / 360 * mapWidth;
+        var y = (90 - latitude) / 180 * mapHeight;
+
+        var pulse = document.getElementById('pulse');
+        
+        // Position des Punktes relativ zur gesamten Seite berechnen
+        var bodyRect = document.body.getBoundingClientRect();
+        var offsetX = rect.left - bodyRect.left;
+        var offsetY = rect.top - bodyRect.top;
+        pulse.style.left = (x + offsetX - pulse.offsetWidth / 2) + 'px';
+        pulse.style.top = (y + offsetY - pulse.offsetHeight / 2) + 'px';
+
+        // Ausgabe der berechneten Koordinaten
+        var coordinatesOutput = document.getElementById('coordinatesOutput');
+        coordinatesOutput.innerText = "Koordinaten: (" + latitude.toFixed(2) + ", " + longitude.toFixed(2) + ")";
+    } else {
+        alert("Ungültige Koordinaten! Bitte geben Sie die Koordinaten im Format 'Breitengrad, Längengrad' ein.");
+    }
+}
+
+</script>
+</body>
+</html>
