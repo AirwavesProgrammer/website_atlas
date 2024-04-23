@@ -73,17 +73,22 @@ section {
     margin-right: 10px;
 }
 
+/* CSS für das Discord-Logo */
+
 .discord-logo {
     position: fixed; /* Das Logo bleibt an einer festen Position auf dem Bildschirm */
     bottom: 20px; /* Abstand zum unteren Bildschirmrand */
     right: 20px; /* Abstand zum rechten Bildschirmrand */
     z-index: 1000; /* Stelle sicher, dass das Logo über anderen Inhalten liegt */
+    display: flex; /* Verwende Flexbox für das Logo */
+    align-items: center; /* Zentriere das Logo vertikal */
 }
 
 .discord-logo img {
     width: 50px; /* Breite des Logos */
     height: auto; /* Automatische Höhe, um das Seitenverhältnis beizubehalten */
 }
+
 
 /* Footer-Stil */
 
