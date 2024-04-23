@@ -1,10 +1,10 @@
-/* Allgemeine Stile */
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f5f5f5; /* Hintergrundfarbe für den gesamten Body */
+    max-width: 100%; /* Maximale Breite des Body auf 100% des Viewports setzen */
+    overflow-x: hidden; /* Horizontales Scrollen unterdrücken */
 }
 
 h2 {
@@ -35,7 +35,6 @@ header {
 header h1 {
     margin-top: 5px; /* Verschiebe das <h1>-Element um 5px nach oben */
 }
-
 
 /* Navigation-Stil */
 
@@ -106,6 +105,7 @@ footer {
     position: fixed; /* Fixiere den Footer am unteren Rand */
     bottom: 0; /* Positioniere den Footer am unteren Bildschirmrand */
     width: 100%; /* Breite des Footers auf 100% des Viewports setzen */
+    max-width: 100%;
 }
 
 footer nav ul {
@@ -134,6 +134,10 @@ footer nav ul li a:hover {
 
 /* mobile Endgeräte - Handy*/
 
+body {
+    max-width: 100%;
+}
+
 header {
     background-color: #333; /* Hintergrundfarbe des Headers */
     color: #fff; /* Textfarbe des Headers */
@@ -156,6 +160,7 @@ footer {
     padding: 5px; /* Innenabstand des Footers für Smartphones */
     text-align: center; /* Zentriere den Text horizontal im Footer */
     width: 100%; /* Breite des Footers auf 100% setzen */
+    max-width: 100%;
     margin: 0; /* Kein seitlicher Abstand */
 }
 
