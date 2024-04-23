@@ -119,19 +119,31 @@ latitude *= latitudeSign;
 }
 
 function copyCoordinates() {
-    // Selektiere das Ausgabefeld
     var coordinatesOutput = document.getElementById('coordinatesOutput');
-    
-    // Selektiere den Text innerhalb des Ausgabefelds
-    coordinatesOutput.select();
-    coordinatesOutput.setSelectionRange(0, 99999); // Für mobile Geräte
-    
-    // Kopiere den Text in das Clipboard des Benutzers
-    document.execCommand('copy');
-    
-    // Benachrichtigung für den Benutzer
-    alert('Koordinaten wurden kopiert: ' + coordinatesOutput.value);
+    var coordinatesText = coordinatesOutput.value;
+
+    // Regex-Muster, um nur numerische Werte zu extrahieren
+    var coordinatePattern = /-?\d+(\.\d+)?/g;
+    var matches = coordinatesText.match(coordinatePattern);
+
+    // Koordinaten aus den gefundenen Matches extrahieren
+    var coordinates = matches.map(function(match) {
+        return parseFloat(match);
+    });
+
+    // Koordinaten in das Zwischenablage kopieren
+    var coordinatesString = coordinates.join(', ');
+    navigator.clipboard.writeText(coordinatesString)
+        .then(function() {
+            console.log('Koordinaten erfolgreich kopiert: ' + coordinatesString);
+            alert('Koordinaten erfolgreich kopiert!');
+        })
+        .catch(function(error) {
+            console.error('Fehler beim Kopieren der Koordinaten: ', error);
+            alert('Fehler beim Kopieren der Koordinaten!');
+        });
 }
+
 
 </script>
 </body>
