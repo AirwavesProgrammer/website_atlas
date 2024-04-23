@@ -135,41 +135,45 @@ footer nav ul li a:hover {
 }
 
 /* CSS für die mobile Ansicht */
+/* CSS für die mobile Ansicht */
 
 @media (max-width: 768px) {
     body {
         max-width: 100%;
-        overflow-x: hidden; 
-        overflow-y: scroll; 
+        overflow-x: hidden; /* Horizontales Scrollen unterdrücken */
+        overflow-y: scroll; /* Vertikales Scrollen aktivieren */
     }
 
     header {
-        background-color: #333; 
-        text-align: center; 
-        height: 45px; 
-        width: 100%;
-        max-width: 100%; 
-        margin: 0; 
+        background-color: #333; /* Hintergrundfarbe des Headers */
+        color: #fff; /* Textfarbe des Headers */
+        padding: 5px 10px; /* Innenabstand des Headers für Smartphones anpassen */
+        text-align: center; /* Zentriere den Text horizontal im Header */
+        height: 50px; /* Höhe des Headers */
+        width: 100%; /* Breite des Headers auf 100% setzen */
+        margin: 0; /* Kein seitlicher Abstand */
     }
 
     header h1 {
-        margin-top: 0; 
-        max-width: 100%;
+        margin-top: 0; /* Entferne den oberen Abstand des Titels */
     }
 
     /* CSS für Footer */
 
     footer {
-        background-color: #333; 
-        color: #fff; 
-        text-align: center; 
-        width: 100%; 
+        background-color: #333; /* Hintergrundfarbe des Footers */
+        color: #fff; /* Textfarbe des Footers */
+        padding: 5px; /* Innenabstand des Footers für Smartphones */
+        text-align: center; /* Zentriere den Text horizontal im Footer */
+        width: 100%; /* Breite des Footers auf 100% setzen */
         max-width: 100%;
-        margin: 0; }
+        margin: 0; /* Kein seitlicher Abstand */
+    }
 
     .discord-logo {
-        width: 30px; 
+        width: 30px; /* Verkleinere die Breite des Logos für Smartphones */
     }
 }
+
 
 
