@@ -141,13 +141,3 @@ footer nav ul li a:hover {
         height: 30px;
     }
 }
-
-/* Stile für größere Bildschirme (z. B. Desktop) */
-@media (min-width: 1024px) {
-    /* Beispiel: Erhöhung des Abstands zwischen Elementen für größere Bildschirme */
-    section {
-        margin-bottom: 40px;
-    }
-    
-    /* Weitere Anpassungen für größere Bildschirme hier */
-}
