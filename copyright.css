@@ -8,7 +8,6 @@ body {
     overflow-y: scroll; /* Vertikales Scrollen aktivieren */
 }
 
-
 h2 {
     color: #333; /* Farbe für Überschriften */
 }
@@ -29,7 +28,7 @@ a {
 header {
     background-color: #333; /* Hintergrundfarbe des Headers */
     color: #fff; /* Textfarbe des Headers */
-    padding: 10px 20px; /* Innenabstand des Headers */
+    padding: 0; /* Innenabstand des Headers auf 0 setzen */
     text-align: center; /* Zentriere den Text horizontal im Header */
     height: 50px; /* Höhe des Headers */
 }
@@ -174,6 +173,7 @@ footer nav ul li a:hover {
         width: 30px; /* Verkleinere die Breite des Logos für Smartphones */
     }
 }
+
 
 
 
