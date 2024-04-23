@@ -22,13 +22,20 @@ a {
 
 /* Header-Stil */
 
+/* CSS für Header */
+
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-    margin-bottom: 20px;
+    background-color: #333; /* Hintergrundfarbe des Headers */
+    color: #fff; /* Textfarbe des Headers */
+    padding: 10px 20px; /* Innenabstand des Headers */
+    text-align: center; /* Zentriere den Text horizontal im Header */
+    height: 50px; /* Höhe des Headers */
 }
+
+header h1 {
+    margin-top: 5px; /* Verschiebe das <h1>-Element um 5px nach oben */
+}
+
 
 /* Navigation-Stil */
 
@@ -93,13 +100,13 @@ section {
 /* Footer-Stil */
 
 footer {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+    background-color: #333; /* Hintergrundfarbe des Footers */
+    color: #fff; /* Textfarbe des Footers */
+    padding: 10px 20px; /* Innenabstand des Footers */
+    text-align: center; /* Zentriere den Text horizontal im Footer */
+    position: fixed; /* Fixiere den Footer am unteren Rand */
+    bottom: 0; /* Positioniere den Footer am unteren Bildschirmrand */
+    width: 100%; /* Breite des Footers auf 100% des Viewports setzen */
 }
 
 footer nav ul {
@@ -148,7 +155,7 @@ footer nav ul li a:hover {
     }
 
     footer {
-        margin-top: 20px; /* Erhöhe den oberen Abstand des Footers */
+        padding: 10px; /* Reduziere den Innenabstand für kleinere Bildschirme */
     }
 }
 
@@ -173,7 +180,7 @@ footer nav ul li a:hover {
     }
 
     footer {
-        margin-top: 20px; /* Erhöhe den oberen Abstand des Footers */
+        padding: 10px 20px;
     }
 
     /* Weitere Anpassungen für Tablets hier */
