@@ -1,0 +1,153 @@
+/* Allgemeine Stile */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5; /* Hintergrundfarbe für den gesamten Body */
+}
+
+h2 {
+    color: #333; /* Farbe für Überschriften */
+}
+
+p {
+    color: #555; /* Farbe für normalen Text */
+}
+
+a {
+    color: #fff; /* Farbe für Links */
+    text-decoration: none;
+}
+
+/* Header-Stil */
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Navigation-Stil */
+
+nav {
+    background-color: #333;
+    padding: 10px 0;
+    text-align: center;
+    margin-top: -20px; /* Negative margin, um die Lücke zwischen Titel und Navigation zu verringern */
+}
+
+nav a {
+    margin: 0 15px;
+    color: #fff; /* Farbe für Navigationslinks */
+}
+
+/* Abschnittsstil */
+
+section {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+/* Kontaktlistenstil */
+
+.contact-list {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.contact-item img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+/* Footer-Stil */
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer nav ul li {
+    display: inline-block;
+    margin-right: 20px; /* Abstand zwischen den Links */
+}
+
+footer nav ul li:first-child {
+    margin-left: 20px; /* Abstand für den ersten Link */
+}
+
+footer nav ul li a {
+    color: #999; /* Textfarbe der Links */
+    text-decoration: underline; /* Unterstreichen der Links */
+}
+
+footer nav ul li a:hover {
+    color: #666; /* Farbe der Links bei Hover */
+}
+
+/* Media Queries für verschiedene Bildschirmgrößen */
+
+/* Stile für kleinere Bildschirme (z. B. Smartphones) */
+@media (max-width: 768px) {
+    /* Beispiel: Verkleinerung der Schriftgröße für kleinere Bildschirme */
+    h1 {
+        font-size: 24px;
+    }
+    
+    /* Weitere Anpassungen für kleinere Bildschirme hier */
+}
+
+/* Stile für Tablets (z. B. iPads) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    /* Beispiel: Anpassungen für Tablets */
+    nav {
+        padding: 20px 0; /* Vergrößerung des oberen und unteren Abstands der Navigation */
+    }
+
+    nav a {
+        margin: 0 10px; /* Reduzierung des horizontalen Abstands zwischen den Navigationslinks */
+    }
+
+    section {
+        padding: 30px; /* Vergrößerung des Innenabstands der Abschnitte */
+    }
+
+    .contact-item img {
+        width: 30px; /* Vergrößerung der Icon-Größe für Kontaktinformationen */
+        height: 30px;
+    }
+}
+
+/* Stile für größere Bildschirme (z. B. Desktop) */
+@media (min-width: 1024px) {
+    /* Beispiel: Erhöhung des Abstands zwischen Elementen für größere Bildschirme */
+    section {
+        margin-bottom: 40px;
+    }
+    
+    /* Weitere Anpassungen für größere Bildschirme hier */
+}

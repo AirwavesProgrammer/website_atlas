@@ -71,24 +71,31 @@ main {
 }
 
 footer {
-    background-color: #333;
-    color: #fff;
-    padding: 5px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333; /* Hintergrundfarbe des Footers */
+    color: #fff; /* Textfarbe des Footers */
     text-align: center;
+    padding: 30px 0 10px; /* Innenabstand des Footers mit mehr oberem Padding */
 }
 
 .coordinates-output {
     position: relative;
     max-width: 300px;
     margin: 0 auto;
+    min-height: 50px;
 }
 
 .coordinates-output textarea {
     width: 100%;
-    height: 30px; 
+    height: 50px; 
     margin-bottom: 10px;
     box-sizing: border-box;
     margin-right: 10px;
+    min-height: 35px;
+    min-width: 200px;
 } 
 
 .coordinates-output button {
@@ -106,6 +113,30 @@ footer {
 
 .coordinates-output button:hover {
     background-color: #45a049; /* Hintergrundfarbe ändern, wenn der Mauszeiger über den Button bewegt wird */
+}
+
+footer nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer nav ul li {
+    display: inline-block;
+    margin-right: 20px; /* Abstand zwischen den Links */
+}
+
+footer nav ul li:first-child {
+    margin-left: 20px; /* Abstand für den ersten Link */
+}
+
+footer nav ul li a {
+    color: #999; /* Textfarbe der Links */
+    text-decoration: underline; /* Unterstreichen der Links */
+}
+
+footer nav ul li a:hover {
+    color: #666; /* Farbe der Links bei Hover */
 }
 
 #pulse {
