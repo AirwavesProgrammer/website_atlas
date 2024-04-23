@@ -148,7 +148,7 @@ footer nav ul li a:hover {
         background-color: #333; /* Hintergrundfarbe des Headers */
         color: #fff; /* Textfarbe des Headers */
         padding: 5px 10px; /* Innenabstand des Headers für Smartphones anpassen */
-        text-align: center; /* Zentriere den Text horizontal im Header */
+        text-align: left; /* Zentriere den Text horizontal im Header */
         height: 50px; /* Höhe des Headers */
         width: 100%; /* Breite des Headers auf 100% setzen */
         margin: 0; /* Kein seitlicher Abstand */
