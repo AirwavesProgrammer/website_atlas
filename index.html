@@ -19,6 +19,7 @@
         <div class="search-bar">
         <input type="text" id="searchInput" placeholder="Gib Koordinaten ein (x,y)">
         <button type="button" onclick="searchLocation()">Suchen</button>
+        <button onclick="copyCoordinates()">Kopieren</button>
 </div>
 
     </header>
@@ -115,6 +116,21 @@ latitude *= latitudeSign;
     } else {
         alert("Ungültige Koordinaten! Bitte geben Sie die Koordinaten im Format 'Breitengrad, Längengrad' ein.");
     }
+}
+
+function copyCoordinates() {
+    // Selektiere das Ausgabefeld
+    var coordinatesOutput = document.getElementById('coordinatesOutput');
+    
+    // Selektiere den Text innerhalb des Ausgabefelds
+    coordinatesOutput.select();
+    coordinatesOutput.setSelectionRange(0, 99999); // Für mobile Geräte
+    
+    // Kopiere den Text in das Clipboard des Benutzers
+    document.execCommand('copy');
+    
+    // Benachrichtigung für den Benutzer
+    alert('Koordinaten wurden kopiert: ' + coordinatesOutput.value);
 }
 
 </script>

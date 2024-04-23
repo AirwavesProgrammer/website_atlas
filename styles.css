@@ -78,6 +78,7 @@ footer {
 }
 
 .coordinates-output {
+    position: relative;
     max-width: 300px;
     margin: 0 auto;
 }
@@ -86,7 +87,26 @@ footer {
     width: 100%;
     height: 30px; 
     margin-bottom: 10px;
+    box-sizing: border-box;
+    margin-right: 10px;
 } 
+
+.coordinates-output button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 8px 16px;
+    background-color: #4CAF50; /* Hintergrundfarbe des Buttons */
+    color: white; /* Textfarbe des Buttons */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.coordinates-output button:hover {
+    background-color: #45a049; /* Hintergrundfarbe ändern, wenn der Mauszeiger über den Button bewegt wird */
+}
 
 #pulse {
     width: 20px; /* Größe des Punktes erhöhen */
@@ -142,6 +162,10 @@ footer {
     .coordinates-output textarea {
         height: 30px; /* Kleinere Höhe für das Textfeld */
     }
+
+    .coordinates-output textarea {
+        width: calc(100% - 120px); /* Breite des Textfelds abzüglich des Abstands und der Breite des Buttons */
+    }
 }
 
 /* Smartphones und kleinere Geräte (maximal 767px Breite) */
@@ -172,6 +196,10 @@ footer {
 
     .coordinates-output textarea {
         height: 20px; /* Kleinere Höhe für das Textfeld */
+    }
+
+    .coordinates-output textarea {
+        width: calc(100% - 70px); /* Breite des Textfelds abzüglich des Abstands und der Breite des Buttons */
     }
 }
 
