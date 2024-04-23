@@ -139,37 +139,36 @@ footer nav ul li a:hover {
 @media (max-width: 768px) {
     body {
         max-width: 100%;
-        overflow-x: hidden; /* Horizontales Scrollen unterdrücken */
-        overflow-y: scroll; /* Vertikales Scrollen aktivieren */
+        overflow-x: hidden; 
+        overflow-y: scroll; 
     }
 
     header {
-        background-color: #333; /* Hintergrundfarbe des Headers */
-        color: #fff; /* Textfarbe des Headers */
-        text-align: center; /* Zentriere den Text horizontal im Header */
-        height: 50px; /* Höhe des Headers */
-        width: 100%; /* Breite des Headers auf 100% setzen */
-        margin: 0; /* Kein seitlicher Abstand */
+        background-color: #333; 
+        text-align: center; 
+        height: 45px; 
+        width: 100%;
+        max-width: 100%; 
+        margin: 0; 
     }
 
     header h1 {
-        margin-top: 0; /* Entferne den oberen Abstand des Titels */
+        margin-top: 0; 
         max-width: 100%;
     }
 
     /* CSS für Footer */
 
     footer {
-        background-color: #333; /* Hintergrundfarbe des Footers */
-        color: #fff; /* Textfarbe des Footers */
-        text-align: center; /* Zentriere den Text horizontal im Footer */
-        width: 100%; /* Breite des Footers auf 100% setzen */
+        background-color: #333; 
+        color: #fff; 
+        text-align: center; 
+        width: 100%; 
         max-width: 100%;
-        margin: 0; /* Kein seitlicher Abstand */
-    }
+        margin: 0; }
 
     .discord-logo {
-        width: 30px; /* Verkleinere die Breite des Logos für Smartphones */
+        width: 30px; 
     }
 }
 
