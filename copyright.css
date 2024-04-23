@@ -96,7 +96,6 @@ section {
     height: auto; /* Automatische Höhe, um das Seitenverhältnis beizubehalten */
 }
 
-
 /* Footer-Stil */
 
 footer {
@@ -133,56 +132,34 @@ footer nav ul li a:hover {
     color: #666; /* Farbe der Links bei Hover */
 }
 
-/* CSS für mobile Endgeräte */
+/* mobile Endgeräte - Handy*/
 
-@media (max-width: 768px) {
-    body {
-        padding: 20px; /* Füge einen äußeren Abstand hinzu, um den Inhalt von den Seitenrändern zu trennen */
-    }
-
-    nav {
-        display: flex; /* Verwende Flexbox für die Navigation */
-        flex-direction: column; /* Ändere die Richtung der Navigation auf vertikal */
-        align-items: center; /* Zentriere die Navigation horizontal */
-    }
-
-    nav a {
-        margin: 10px 0; /* Ändere den Abstand zwischen den Navigationslinks */
-    }
-
-    section {
-        padding: 20px; /* Füge Innenabstand zu den Abschnitten hinzu */
-    }
-
-    footer {
-        padding: 10px; /* Reduziere den Innenabstand für kleinere Bildschirme */
-    }
+header {
+    background-color: #333; /* Hintergrundfarbe des Headers */
+    color: #fff; /* Textfarbe des Headers */
+    padding: 10px; /* Innenabstand des Headers für Smartphones */
+    text-align: center; /* Zentriere den Text horizontal im Header */
+    height: 50px; /* Höhe des Headers */
+    width: 100%; /* Breite des Headers auf 100% setzen */
+    margin: 0; /* Kein seitlicher Abstand */
 }
 
-/* CSS für Tablets */
-
-@media (min-width: 768px) and (max-width: 1024px) {
-    body {
-        padding: 20px; /* Füge einen äußeren Abstand hinzu, um den Inhalt von den Seitenrändern zu trennen */
-    }
-
-    nav {
-        display: flex; /* Verwende Flexbox für die Navigation */
-        justify-content: center; /* Zentriere die Navigation horizontal */
-    }
-
-    nav a {
-        margin: 0 20px; /* Ändere den Abstand zwischen den Navigationslinks */
-    }
-
-    section {
-        padding: 20px; /* Füge Innenabstand zu den Abschnitten hinzu */
-    }
-
-    footer {
-        padding: 10px 20px;
-    }
-
-    /* Weitere Anpassungen für Tablets hier */
+header h1 {
+    margin-top: 0; /* Entferne den oberen Abstand des Titels */
 }
+
+/* CSS für Footer */
+
+footer {
+    background-color: #333; /* Hintergrundfarbe des Footers */
+    color: #fff; /* Textfarbe des Footers */
+    padding: 5px; /* Innenabstand des Footers für Smartphones */
+    text-align: center; /* Zentriere den Text horizontal im Footer */
+    width: 100%; /* Breite des Footers auf 100% setzen */
+    margin: 0; /* Kein seitlicher Abstand */
+}
+
+.discord-logo {
+        width: 30px; /* Verkleinere die Breite des Logos für Smartphones */
+    }
 
