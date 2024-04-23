@@ -109,35 +109,56 @@ footer nav ul li a:hover {
     color: #666; /* Farbe der Links bei Hover */
 }
 
-/* Media Queries für verschiedene Bildschirmgrößen */
+/* CSS für mobile Endgeräte */
 
-/* Stile für kleinere Bildschirme (z. B. Smartphones) */
 @media (max-width: 768px) {
-    /* Beispiel: Verkleinerung der Schriftgröße für kleinere Bildschirme */
-    h1 {
-        font-size: 24px;
+    body {
+        padding: 20px; /* Füge einen äußeren Abstand hinzu, um den Inhalt von den Seitenrändern zu trennen */
     }
-    
-    /* Weitere Anpassungen für kleinere Bildschirme hier */
-}
 
-/* Stile für Tablets (z. B. iPads) */
-@media (min-width: 768px) and (max-width: 1024px) {
-    /* Beispiel: Anpassungen für Tablets */
     nav {
-        padding: 20px 0; /* Vergrößerung des oberen und unteren Abstands der Navigation */
+        display: flex; /* Verwende Flexbox für die Navigation */
+        flex-direction: column; /* Ändere die Richtung der Navigation auf vertikal */
+        align-items: center; /* Zentriere die Navigation horizontal */
     }
 
     nav a {
-        margin: 0 10px; /* Reduzierung des horizontalen Abstands zwischen den Navigationslinks */
+        margin: 10px 0; /* Ändere den Abstand zwischen den Navigationslinks */
     }
 
     section {
-        padding: 30px; /* Vergrößerung des Innenabstands der Abschnitte */
+        padding: 20px; /* Füge Innenabstand zu den Abschnitten hinzu */
     }
 
-    .contact-item img {
-        width: 30px; /* Vergrößerung der Icon-Größe für Kontaktinformationen */
-        height: 30px;
+    footer {
+        margin-top: 20px; /* Erhöhe den oberen Abstand des Footers */
     }
 }
+
+/* CSS für Tablets */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    body {
+        padding: 20px; /* Füge einen äußeren Abstand hinzu, um den Inhalt von den Seitenrändern zu trennen */
+    }
+
+    nav {
+        display: flex; /* Verwende Flexbox für die Navigation */
+        justify-content: center; /* Zentriere die Navigation horizontal */
+    }
+
+    nav a {
+        margin: 0 20px; /* Ändere den Abstand zwischen den Navigationslinks */
+    }
+
+    section {
+        padding: 20px; /* Füge Innenabstand zu den Abschnitten hinzu */
+    }
+
+    footer {
+        margin-top: 20px; /* Erhöhe den oberen Abstand des Footers */
+    }
+
+    /* Weitere Anpassungen für Tablets hier */
+}
+
