@@ -5,7 +5,9 @@ body {
     background-color: #f5f5f5; /* Hintergrundfarbe für den gesamten Body */
     max-width: 100%; /* Maximale Breite des Body auf 100% des Viewports setzen */
     overflow-x: hidden; /* Horizontales Scrollen unterdrücken */
+    overflow-y: scroll; /* Vertikales Scrollen aktivieren */
 }
+
 
 h2 {
     color: #333; /* Farbe für Überschriften */
@@ -136,6 +138,8 @@ footer nav ul li a:hover {
 
 body {
     max-width: 100%;
+    overflow-x: hidden; /* Horizontales Scrollen unterdrücken */
+    overflow-y: scroll; /* Vertikales Scrollen aktivieren */
 }
 
 header {
