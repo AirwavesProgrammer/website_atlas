@@ -162,7 +162,7 @@ footer nav ul li a:hover {
 
     /* Stile für den Kontaktbereich */
     #contact {
-        margin-bottom: 50px; /* Verringere den Abstand zum Footer */
+        margin-bottom: 80px; /* Erhöhe den Abstand zum Footer weiter */
         padding-bottom: 5px; /* Kleinere Polsterung */
     }
 
