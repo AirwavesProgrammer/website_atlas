@@ -15,14 +15,6 @@ header {
     text-align: center;
 }
 
-footer {
-    background-color: #333; /* Dunkelgrauer Hintergrund */
-    color: #fff; /* Weiße Schriftfarbe */
-    padding: 20px;
-    text-align: center;
-    margin-top: auto; /* Footer nach unten schieben */
-}
-
 section {
     padding: 20px;
     margin-bottom: 30px;
@@ -44,7 +36,7 @@ h1, h2 {
 }
 
 /* Stile für bestimmte Abschnitte */
-#partners, #server-info, #differences, #contact {
+#partners, #server-info, #contact {
     background-color: #fff;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -64,14 +56,33 @@ h1, h2 {
     padding: 15px; /* Innenabstand */
     border: 1px solid #ddd; /* Rand */
     border-radius: 5px; /* Abgerundete Ecken */
-    background-color: #f2f9ff; /* Hintergrundfarbe der Textfelder */
+    background-color: white; /* Hintergrundfarbe der Textfelder */
     color: #333; /* Schriftfarbe */
 }
 
+/* Stile für die Kategorie "Unterschiede und Gemeinsamkeiten" */
+#differences {
+    background-color: #f9f9f9; /* Hintergrundfarbe der Kategorie */
+    border: 1px solid #ccc; /* Rand */
+    border-radius: 5px; /* Abgerundete Ecken */
+    padding: 20px; /* Innenabstand */
+}
+
+/* Stile für jedes Textfeld */
+.difference {
+    margin-bottom: 20px; /* Abstand zwischen den Textfeldern */
+    padding: 15px; /* Innenabstand */
+    border: 1px solid #ddd; /* Rand */
+    border-radius: 5px; /* Abgerundete Ecken */
+    background-color: white; /* Hintergrundfarbe der Textfelder */
+    color: #333; /* Schriftfarbe */
+}
 
 /* Stile für den Kontaktbereich */
 #contact {
     text-align: center;
+    margin-bottom: 150px; /* Erhöhe den Abstand zum Footer weiter */
+    padding-bottom: 20px; /* Zusätzlicher Innenabstand für den Kontaktbereich */
 }
 
 #contact p {
@@ -89,4 +100,74 @@ h1, h2 {
 
 #contact a:hover {
     background-color: #0056b3;
+}
+
+/* Stile für den Footer */
+footer {
+    background-color: #333; /* Hintergrundfarbe des Footers */
+    color: #fff; /* Textfarbe des Footers */
+    padding: 20px; /* Innenabstand des Footers */
+    text-align: center; /* Zentriere den Text horizontal im Footer */
+    position: fixed; /* Fixiere den Footer am unteren Rand */
+    bottom: 0; /* Positioniere den Footer am unteren Bildschirmrand */
+    width: 100%; /* Breite des Footers auf 100% des Viewports setzen */
+    max-width: 100%;
+}
+
+footer nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer nav ul li {
+    display: inline-block;
+    margin-right: 20px; /* Abstand zwischen den Links */
+}
+
+footer nav ul li:first-child {
+    margin-left: 20px; /* Abstand für den ersten Link */
+}
+
+footer nav ul li a {
+    color: #999; /* Textfarbe der Links */
+    text-decoration: underline; /* Unterstreichen der Links */
+}
+
+footer nav ul li a:hover {
+    color: #666; /* Farbe der Links bei Hover */
+}
+
+/* Media Query für Smartphones */
+@media only screen and (max-width: 600px) {
+    /* Stile für den Header */
+    header {
+        padding: 5px; /* Kleinere Polsterung */
+    }
+
+    /* Stile für die Überschriften */
+    h1, h2 {
+        padding: 3px 5px; /* Kleinere Polsterung */
+    }
+
+    /* Stile für die Einleitung */
+    .intro {
+        font-size: 12px; /* Kleinere Schriftgröße */
+    }
+
+    /* Stile für die Kategorien */
+    section {
+        padding: 5px; /* Kleinere Polsterung */
+    }
+
+    /* Stile für den Kontaktbereich */
+    #contact {
+        margin-bottom: 50px; /* Verringere den Abstand zum Footer */
+        padding-bottom: 5px; /* Kleinere Polsterung */
+    }
+
+    /* Stile für den Footer */
+    footer {
+        padding: 5px; /* Kleinere Polsterung */
+    }
 }
