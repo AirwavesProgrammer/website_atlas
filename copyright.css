@@ -179,19 +179,6 @@ footer nav ul li a:hover {
         margin-right: 10px; /* Verringere den Abstand zwischen den Links im Footer für Smartphones */
     }
 
-    footer nav ul li:first-child {
-        margin-left: 10px; /* Abstand für den ersten Link */
-    }
-
-    footer nav ul li a {
-        color: #999; /* Textfarbe der Links */
-        text-decoration: underline; /* Unterstreichen der Links */
-    }
-
-    footer nav ul li a:hover {
-        color: #666; /* Farbe der Links bei Hover */
-    }
-    
     .discord-logo {
         width: 30px; /* Verkleinere die Breite des Logos für Smartphones */
     }
