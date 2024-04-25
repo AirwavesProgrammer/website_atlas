@@ -7,11 +7,11 @@
 
 **Über ATLAS**
 
-Hier findest du alle wichtigen Informationen über ATLAS. Dies kann eine kurze Einführung, Funktionsweise und andere relevante Details umfassen.
+- Hier findest du alle wichtigen Informationen über ATLAS. Dies kann eine kurze Einführung, Funktionsweise und andere relevante Details umfassen.
 
 **Koordinatentracker**
 
-Benutze diesen Tab, um Koordinaten zu tracken. Gib die Koordinaten ein und erhalte detaillierte Informationen.
+- Benutze diesen Tab, um Koordinaten zu tracken. Gib die Koordinaten ein und erhalte detaillierte Informationen.
 
 **Datenschutz und Copyright**
 
