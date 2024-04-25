@@ -20,9 +20,9 @@
 **Partnerschaften**
 
 - Entdecke die Partnerschaften dieser Website mit anderen Discord-Servern. Wir pflegen enge Beziehungen zu anderen Communities und freuen uns über neue Partnerschaften.
-Kontakt
 
+**Kontakt**
 - Für Fragen, Anregungen oder Probleme kontaktiere uns unter [E-Mail-Adresse] oder besuche unseren Discord-Server [Link].
 Lizenz
 
-- Dieses Projekt ist unter der [Lizenz] lizenziert.
+*Dieses Projekt ist unter der [Lizenz] lizenziert.*
