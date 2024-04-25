@@ -20,8 +20,7 @@
         <input type="text" id="searchInput" placeholder="Gib Koordinaten ein (x,y)">
         <button type="button" onclick="searchLocation()">Suchen</button>
         <button onclick="copyCoordinates()">Kopieren</button>
-</div>
-
+        </div>
     </header>
 
     <main>
@@ -35,6 +34,8 @@
         <div class="coordinates-output">
             <h2>Koordinaten:</h2>
             <textarea id="coordinatesOutput" readonly></textarea>
+            <button id="crop-button" onclick="saveImage()">Bild herunterladen</button>
+            <button id="sendCoordinates" onclick="sendCoordinatesToWebhook()">Sende Koordinaten</button>
         </div>
 
         <nav>
@@ -151,6 +152,78 @@ function copyCoordinates() {
             console.error('Fehler beim Kopieren der Koordinaten: ', error);
             alert('Fehler beim Kopieren der Koordinaten!');
         });
+}
+
+function saveImage() {
+    // Bild laden
+    const mapImage = document.querySelector('.map img');
+
+    // Bild als PNG-Datei herunterladen
+    const downloadLink = document.createElement('a');
+    downloadLink.download = 'kartenbild.png';
+    downloadLink.href = mapImage.src;
+    downloadLink.click();
+}
+
+function sendCoordinatesToWebhook() {
+    // Element für die Koordinaten
+    const coordinatesOutput = document.getElementById('coordinatesOutput');
+
+    // Koordinaten aus dem Output-Feld extrahieren
+    const coordinates = coordinatesOutput.value.match(/-?\d+(\.\d+)?/g);
+
+    // Sicherstellen, dass zwei Zahlen gefunden wurden und nicht leer sind
+    if (!coordinates || coordinates.length !== 2 || coordinates[0] === '' || coordinates[1] === '') {
+        console.error('Ungültige Koordinaten im Output-Feld.');
+        return;
+    }
+
+    // Formatieren der Koordinaten im gewünschten Format
+    const latitude = parseFloat(coordinates[0]).toFixed(2);
+    const longitude = parseFloat(coordinates[1]).toFixed(2);
+
+    // URL des Webhooks
+    const webhookURL = 'https://discord.com/api/webhooks/1233103385922633890/4nn_IG9kKkC1qVSCXdlIwhjsIwwW-7IxpY4VwCugi-IHBGaOBcKuf6E1dpB5SnTWGSv5';
+
+    // Daten für den POST-Request (nur Koordinatenwerte senden, die nicht leer oder null sind)
+    const data = {
+    // Inhalt der Nachricht aus dem JSON übernehmen
+    content: `Koordinaten empfangen: ${latitude}, ${longitude}`, // Hier den gewünschten Textinhalt einfügen
+
+    // Einbettungen aus dem JSON übernehmen
+    embeds: null, // Hier die Einbettungsdaten einfügen, falls vorhanden
+
+    // Anhänge aus dem JSON übernehmen
+    attachments: [], // Hier die Anlagendaten einfügen, falls vorhanden
+
+    // Koordinaten aus den extrahierten Werten hinzufügen
+    latitude: latitude,
+    longitude: longitude
+};
+
+    // Prüfen, ob Daten zum Senden vorhanden sind
+    if (!data.latitude && !data.longitude) {
+        console.error('Keine gültigen Koordinaten zum Senden an den Webhook.');
+        return;
+    }
+
+    // POST-Request an den Webhook senden
+    fetch(webhookURL, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
+    })
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Fehler beim Senden der Koordinaten an den Webhook');
+        }
+        console.log('Koordinaten erfolgreich an den Webhook gesendet');
+    })
+    .catch(error => {
+        console.error('Fehler:', error);
+    });
 }
 
 </script>

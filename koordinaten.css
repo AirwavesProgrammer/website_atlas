@@ -84,7 +84,8 @@ footer {
 .coordinates-output {
     position: relative;
     max-width: 300px;
-    margin: 0 auto;
+    margin: 0;
+    left: 750px;
     min-height: 50px;
 }
 
@@ -94,7 +95,7 @@ footer {
     margin-bottom: 10px;
     box-sizing: border-box;
     margin-right: 10px;
-    min-height: 35px;
+    min-height: 50px;
     min-width: 200px;
 } 
 
@@ -107,12 +108,39 @@ footer {
     color: white; /* Textfarbe des Buttons */
     border: none;
     border-radius: 4px;
+    margin-top: 10px;
+    margin-left: -20px;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
 .coordinates-output button:hover {
     background-color: #45a049; /* Hintergrundfarbe ändern, wenn der Mauszeiger über den Button bewegt wird */
+}
+
+#crop-button {
+    position: absolute;
+    top: 40px; /* Abstand zum unteren Rand erhöhen */
+    left: 300px; /* Abstand zum rechten Rand */
+    padding: 6px 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    max-height: 50px;
+    max-width: 200px;
+}
+
+#crop-button:hover {
+    background-color: #45a049;
+}
+
+#sendCoordinates {
+    left: 450px; 
+    top: 40px;
+    max-height: 50px;
 }
 
 footer nav ul {
