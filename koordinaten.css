@@ -65,7 +65,7 @@ main {
 
 .map img {
     max-width: 80%; 
-    max-height: 835px; 
+    max-height: 750px; 
     border: 1px solid #ccc;
     border-radius: 5px;
 }
