@@ -29,6 +29,30 @@ header {
     height: 50px;
 }
 
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-right: 20px; /* Abstand zwischen den Links */
+}
+
+header nav ul li:first-child {
+    margin-left: 20px; /* Abstand für den ersten Link */
+}
+
+header nav ul li a {
+    color:white; /* Textfarbe der Links */
+    text-decoration: underline; /* Unterstreichen der Links */
+}
+
+header nav ul li a:hover {
+    color: #666; /* Farbe der Links bei Hover */
+}
+
 .logo-container, .search-bar {
     margin-right: 10px;
 }
@@ -70,11 +94,11 @@ main {
     border-radius: 5px;
 }
 
-footer {
+.footer {
     position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
+    bottom: 20px;
+    left: 650px; /* Erhöhe den linken Abstand */
+    width: calc(100% - 250px); /* Verkleinere die Breite um den gleichen Betrag */
     background-color: #333; /* Hintergrundfarbe des Footers */
     color: #fff; /* Textfarbe des Footers */
     text-align: center;
@@ -85,8 +109,12 @@ footer {
     position: relative;
     max-width: 300px;
     margin: 0;
-    left: 750px;
+    left: 650px; /* Erhöhe den linken Abstand */
     min-height: 50px;
+}
+
+.coordinates-output h2 {
+    color: white; /* Farbe der Überschrift auf weiß ändern */
 }
 
 .coordinates-output textarea {
@@ -142,30 +170,6 @@ footer {
     top: 40px;
     max-height: 50px;
     min-width: 100px;
-}
-
-footer nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-footer nav ul li {
-    display: inline-block;
-    margin-right: 20px; /* Abstand zwischen den Links */
-}
-
-footer nav ul li:first-child {
-    margin-left: 20px; /* Abstand für den ersten Link */
-}
-
-footer nav ul li a {
-    color: #999; /* Textfarbe der Links */
-    text-decoration: underline; /* Unterstreichen der Links */
-}
-
-footer nav ul li a:hover {
-    color: #666; /* Farbe der Links bei Hover */
 }
 
 #pulse {
@@ -262,6 +266,8 @@ footer nav ul li a:hover {
         width: calc(100% - 70px); /* Breite des Textfelds abzüglich des Abstands und der Breite des Buttons */
     }
 }
+
+
 
 
 
