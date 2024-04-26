@@ -124,7 +124,6 @@ main {
     box-sizing: border-box;
     margin-right: 10px;
     min-height: 50px;
-    min-width: 200px;
 } 
 
 .coordinates-output button {
@@ -280,7 +279,7 @@ main {
         background-color: #333;
         color: #fff;
         padding: 10px 0;
-        margin-bottom: 150px /* changed margin between map and footer */
+        margin-bottom: 100px /* changed margin between map and footer */
     }
 
     .coordinates-output {
@@ -288,18 +287,28 @@ main {
         right: auto;
         max-width: calc(40% - 20px); /* Breite des Ausgabebereichs */
         padding: 0 10px;
-        max-width: 150px; /* changed width of output*/
+        max-width: 100px; /* changed width of output*/
         max-height: 100px;
+    }
 
+    .coordinates-output textarea {
+        min-width: 140px;
+        max-width: 175px;
+        min-height: 70px;
     }
 
     #crop-button {
-        margin-left: -70px; /* Abstand zum coordinates-output */
+        margin-top: 25px;
+        margin-left: -120px; /* Abstand zum coordinates-output */
+        max-height: 42px;
+        max-width: 100px;
     }
 
     #sendCoordinates{
-        margin-left: -100px;
+        margin-top: 25px;
+        margin-left: -150px;
         max-height: 42px;
+        max-width: 100px;
     }
 
     #pulse {
