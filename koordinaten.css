@@ -299,14 +299,14 @@ main {
 
     #crop-button {
         margin-top: 25px;
-        margin-left: -120px; /* Abstand zum coordinates-output */
+        margin-left: -140px; /* Abstand zum coordinates-output */
         max-height: 42px;
         max-width: 100px;
     }
 
     #sendCoordinates{
         margin-top: 25px;
-        margin-left: -150px;
+        margin-left: -180px;
         max-height: 42px;
         max-width: 100px;
     }
