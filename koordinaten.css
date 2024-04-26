@@ -169,9 +169,9 @@ main {
 #sendCoordinates {
     left: 450px; 
     top: 40px;
-    max-height: 44px;
+    max-height: 50px;
     max-width: 100px;
-    margin-left: -130px;
+    margin-left: -120px;
 }
 
 #pulse {
