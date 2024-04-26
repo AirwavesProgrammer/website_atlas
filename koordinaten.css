@@ -309,6 +309,7 @@ main {
         margin-left: -180px;
         max-height: 42px;
         max-width: 100px;
+        margin-right: 10px;
     }
 
     #pulse {
