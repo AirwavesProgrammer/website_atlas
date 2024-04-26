@@ -125,7 +125,6 @@ main {
     box-sizing: border-box;
     margin-right: 10px;
     min-height: 50px;
-    max-width: 200px;
 } 
 
 .coordinates-output button {
@@ -171,8 +170,8 @@ main {
     left: 450px; 
     top: 40px;
     max-height: 44px;
-    max-width: 150px;
-    margin-left: -100px;
+    max-width: 100px;
+    margin-left: -130px;
 }
 
 #pulse {
@@ -252,36 +251,42 @@ footer {
         background-color: #333;
         color: #fff;
         padding: 10px 0;
-        margin-bottom: 100px /* changed margin between map and footer */
+        margin-bottom: 150px; /* changed margin between map and footer */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .coordinates-output {
+        position: relative;
         left: 10px;
         right: auto;
-        max-width: calc(40% - 20px); /* Breite des Ausgabebereichs */
         padding: 0 10px;
-        max-width: 100px; /* changed width of output*/
-        max-height: 100px;
     }
 
     .coordinates-output textarea {
-        min-width: 120px;
-        max-width: 140px;
-        min-height: 70px;
+        width: calc(100% - 20px); /* Setze die Breite auf 100% mit einem Abstand von 10px auf beiden Seiten */
+        box-sizing: border-box; /* Berücksichtige die Ränder in der Breite */
+        margin-bottom: 10px; /* Füge Abstand unterhalb des textarea hinzu */
     }
 
     #crop-button {
-        margin-top: 25px;
-        margin-left: -140px; /* Abstand zum coordinates-output */
-        max-height: 42px;
-        max-width: 50px;
+        position: relative;
+        left: auto;
+        top: 10px; /* Verschiebe den Button um 10px nach unten */
+        min-width: calc(100% - 20px); /* Setze die Breite auf 100% mit einem Abstand von 10px auf beiden Seiten */
+        max-height: 50px;
+        margin-left: 5px; /* Füge Abstand oberhalb und unterhalb des Buttons hinzu */
+        margin-bottom: 10px;
     }
 
-    #sendCoordinates{
-        margin-top: 25px;
-        margin-left: -170px;
-        max-height: 42px;
-        max-width: 100px;
+    #sendCoordinates {
+        position: relative;
+        left: auto;
+        top: 10px; /* Verschiebe den Button um 10px nach unten */
+        min-width: calc(100% - 20px); /* Setze die Breite auf 100% mit einem Abstand von 10px auf beiden Seiten */
+        max-height: 50px;
+        margin-left: 5px; /* Füge Abstand oberhalb und unterhalb des Buttons hinzu */
     }
 
     #pulse {
@@ -289,6 +294,7 @@ footer {
         height: 16px;
     }
 }
+
 
 
 
