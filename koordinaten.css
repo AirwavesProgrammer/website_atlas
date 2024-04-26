@@ -246,10 +246,6 @@ main {
         margin-bottom: 10px;
     }
 
-    main {
-        padding-top: 20px; /* Platz für den Inhalt des Headers schaffen */
-    }
-
     .search-bar {
         order: 1;
         flex-direction: column;
@@ -258,43 +254,17 @@ main {
 
     .search-bar input {
         width: calc(100% - 20px); /* Breite des Eingabefelds */
-        margin-bottom: 10px; /* Abstand zwischen Eingabefeld und Button */
+        margin-bottom: 10px; 
+        margin-top: 10px;
     }
 
     .search-bar button {
         width: calc(100% - 20px); /* Breite des Buttons */
+        margin-bottom: 10px; /* Abstand zwischen den Buttons */
     }
 
-    .coordinates-output {
-        left: 10px;
-        right: auto;
-        max-width: calc(100% - 20px); /* Breite des Ausgabebereichs */
-        margin: 0;
-        padding: 0 10px;
-    }
-
-    #crop-button {
-        top: 20px;
-        left: 10px; /* Abstand vom linken Rand */
-        right: auto;
-        transform: none;
-        padding: 4px 8px;
-        max-height: 40px;
-        min-width: 80px;
-    }
-
-    #sendCoordinates {
-        top: 20px;
-        left: 10px; /* Abstand vom linken Rand */
-        right: auto;
-        transform: none;
-        max-height: 40px;
-        min-width: 80px;
-    }
-
-    #pulse {
-        width: 16px;
-        height: 16px;
+    main {
+        padding-top: 20px; /* Platz für den Inhalt des Headers schaffen */
     }
 
     .map img {
@@ -303,42 +273,35 @@ main {
     }
 
     footer {
-        display: flex;
-        justify-content: space-around;
-        padding: 10px 0;
         position: fixed;
         bottom: 0;
-        width: 100%;
+        left: 10px; /* Abstand vom linken Rand */
+        width: calc(100% - 20px); /* Gesamtbreite des Bildschirms abzüglich des Abstands */
         background-color: #333;
         color: #fff;
+        padding: 10px 0;
     }
 
-    footer nav {
-        display: inline;
+    .coordinates-output {
+        left: 10px;
+        right: auto;
+        max-width: calc(40% - 20px); /* Breite des Ausgabebereichs */
+        padding: 0 10px;
+        
     }
 
-    footer nav ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
+    #crop-button {
+        margin-left: -70px; /* Abstand zum coordinates-output */
     }
 
-    footer nav ul li {
-        display: inline-block;
-        margin-right: 10px;
+    #sendCoordinates{
+        margin-left: -100px;
+        max-height: 42px;
     }
 
-    footer nav ul li:first-child {
-        margin-left: 10px;
-    }
-
-    footer nav ul li a {
-        color: white;
-        text-decoration: underline;
-    }
-
-    footer nav ul li a:hover {
-        color: #666;
+    #pulse {
+        width: 16px;
+        height: 16px;
     }
 }
 
