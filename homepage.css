@@ -1,1 +1,11 @@
+header {
+    background-color: #333; /* Hintergrundfarbe des Headers */
+    color: #fff; /* Textfarbe des Headers */
+    padding: 10px 20px; /* Innenabstand des Headers */
+    text-align: center; /* Zentriere den Text horizontal im Header */
+    height: 50px; /* Höhe des Headers */
+}
 
+header h1 {
+    margin-top: 5px; /* Verschiebe das <h1>-Element um 5px nach oben */
+}

@@ -6,6 +6,7 @@ body {
 }
 
 header {
+    padding: 10px 20px;
     background-color: #333;
     color: #fff;
     padding: 20px;
@@ -118,12 +119,13 @@ main {
 }
 
 .coordinates-output textarea {
-    width: 100%;
+    width: calc(100% - 120px);
     height: 50px; 
     margin-bottom: 10px;
     box-sizing: border-box;
     margin-right: 10px;
     min-height: 50px;
+    max-width: 200px;
 } 
 
 .coordinates-output button {
@@ -157,7 +159,8 @@ main {
     cursor: pointer;
     transition: background-color 0.3s ease;
     max-height: 50px;
-    min-width: 100px;
+    min-width: 120px;
+    margin-left: -100px;
 }
 
 #crop-button:hover {
@@ -167,8 +170,9 @@ main {
 #sendCoordinates {
     left: 450px; 
     top: 40px;
-    max-height: 50px;
-    min-width: 100px;
+    max-height: 44px;
+    max-width: 150px;
+    margin-left: -100px;
 }
 
 #pulse {
@@ -196,42 +200,11 @@ main {
     animation: pulse 1s ease-out infinite; /* Endlosschleife für die Animation */
 }
 
-/* Tablets und größere Geräte (mindestens 768px Breite) */
-@media only screen and (min-width: 768px) {
-    header {
-        padding: 10px 20px; /* Kleinere Polsterung für den Header */
-    }
-
-    .logo img {
-        height: 40px; /* Kleinere Logo-Höhe */
-    }
-
-    .search-bar input {
-        padding: 6px;
-    }
-
-    .search-bar button {
-        padding: 6px 16px;
-    }
-
-    main {
-        padding: 20px 40px; /* Größere Polsterung für den Hauptbereich */
-    }
-
-    footer {
-        padding: 5px 20px; /* Größere Polsterung für den Footer */
-    }
-
-    .coordinates-output textarea {
-        height: 30px; /* Kleinere Höhe für das Textfeld */
-    }
-
-    .coordinates-output textarea {
-        width: calc(100% - 120px); /* Breite des Textfelds abzüglich des Abstands und der Breite des Buttons */
-    }
+footer {
+    padding: 5px 20px;
+    margin-top: -30px;
 }
 
-/* Media Query für Smartphones 700px*/
 @media only screen and (max-width: 600px) {
     header {
         display: flex;
