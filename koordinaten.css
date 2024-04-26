@@ -245,7 +245,7 @@ footer {
 
     footer {
         position: fixed;
-        bottom: 0;
+        bottom: -100px;
         left: 10px; /* Abstand vom linken Rand */
         width: calc(100% - 20px); /* Gesamtbreite des Bildschirms abzüglich des Abstands */
         background-color: #333;
