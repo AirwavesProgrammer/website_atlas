@@ -275,7 +275,7 @@ main {
 
     #crop-button {
         top: 20px;
-        left: 10px;
+        left: 10px; /* Abstand vom linken Rand */
         right: auto;
         transform: none;
         padding: 4px 8px;
@@ -285,7 +285,7 @@ main {
 
     #sendCoordinates {
         top: 20px;
-        left: 10px;
+        left: 10px; /* Abstand vom linken Rand */
         right: auto;
         transform: none;
         max-height: 40px;
