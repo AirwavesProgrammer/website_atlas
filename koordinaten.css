@@ -233,53 +233,35 @@ main {
 }
 
 /* Smartphones und kleinere Geräte (maximal 767px Breite) */
-@media only screen and (max-width: 767px) {
-    header {
-    padding: 10px;
-    }
-
-    .logo-container {
-        margin-right: 10px;
+/* Media Query für Smartphones */
+@media only screen and (max-width: 600px) {
+    .search-bar {
+        flex-direction: column;
+        align-items: flex-start;
     }
 
     .search-bar input {
-        padding: 5px;
+        width: calc(100% - 20px); /* Breite des Eingabefelds */
+        margin-bottom: 10px; /* Abstand zwischen Eingabefeld und Button */
     }
 
     .search-bar button {
-        padding: 5px 10px;
-    }
-
-    header nav ul li {
-        margin-right: 10px;
-    }
-
-    header nav ul li:first-child {
-        margin-left: 10px;
-    }
-
-    main {
-        padding: 10px;
-    }
-
-    .footer {
-        left: 0;
-        width: 100%;
-        text-align: center;
-        padding: 20px 0;
+        width: calc(100% - 20px); /* Breite des Buttons */
     }
 
     .coordinates-output {
-        left: 0;
-        max-width: 100%;
+        left: 10px;
+        right: auto;
+        max-width: calc(100% - 20px); /* Breite des Ausgabebereichs */
         margin: 0;
         padding: 0 10px;
     }
 
     #crop-button {
         top: 20px;
-        left: 50%;
-        transform: translateX(-50%);
+        left: 10px;
+        right: auto;
+        transform: none;
         padding: 4px 8px;
         max-height: 40px;
         min-width: 80px;
@@ -287,8 +269,9 @@ main {
 
     #sendCoordinates {
         top: 20px;
-        left: 50%;
-        transform: translateX(-50%);
+        left: 10px;
+        right: auto;
+        transform: none;
         max-height: 40px;
         min-width: 80px;
     }
@@ -302,9 +285,7 @@ main {
         max-width: 100%;
         max-height: 300px;
     }
-
 }
-
 
 
 
