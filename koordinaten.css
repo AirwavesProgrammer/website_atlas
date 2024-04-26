@@ -232,7 +232,7 @@ main {
     }
 }
 
-/* Media Query für Smartphones */
+/* Media Query für Smartphones 700px*/
 @media only screen and (max-width: 600px) {
     header {
         display: flex;
