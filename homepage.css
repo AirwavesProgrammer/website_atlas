@@ -1,11 +1,171 @@
-header {
-    background-color: #333; /* Hintergrundfarbe des Headers */
-    color: #fff; /* Textfarbe des Headers */
-    padding: 10px 20px; /* Innenabstand des Headers */
-    text-align: center; /* Zentriere den Text horizontal im Header */
-    height: 50px; /* Höhe des Headers */
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif; 
 }
 
-header h1 {
-    margin-top: 5px; /* Verschiebe das <h1>-Element um 5px nach oben */
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px, 20px;
+    text-align: center;
 }
+
+.content-container {
+    width: calc(100%-20px);
+    border: 2px solid #ccc;
+    padding: 20px;
+}
+
+h2 {
+    background-color: #cccccc; /* Hintergrundfarbe für die Überschrift */
+    color: #fff; /* Textfarbe für die Überschrift */
+    padding: 10px; /* Innenabstand für die Überschrift */
+}
+
+.items {
+    display: flex;
+    flex-direction: column;
+    width: 100%; 
+}
+
+.item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 30px;
+    position: relative; 
+}
+
+.item strong {
+    color: #3366cc;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.item p {
+    margin: 0;
+    line-height: 1.5;
+}
+
+.label {
+    background-color: lightblue; 
+    color: white;
+    font-size: 24px;
+    padding: 10px; 
+    margin-right: 10px; 
+    min-width: 100px;
+    min-height: 70px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-container {
+    display: flex;
+}
+
+.image-container img {
+    margin-right: 10px; 
+    max-width: calc(100%/4);
+    max-height: 200px;
+}
+
+.media-container {
+    display: flex;
+    align-items: center; 
+}
+
+.media-container video { 
+    margin-top: 20px;
+    max-width: 300px; 
+    min-height: 200px;
+}
+
+.single-item-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.single-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 30px;
+    position: relative; 
+}
+
+.single-item strong {
+    color: #3366cc;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.single-item p {
+    margin: 0;
+    line-height: 1.5;
+    font-style: italic;
+}
+
+.link-container .email-icon {
+    width: 50px; 
+    height: 50px; 
+    vertical-align: middle; 
+    margin-right: 5px; 
+}
+
+.link-container .discord-icon {
+    width: 50px; 
+    height: 50px; 
+    vertical-align: middle; 
+    margin-right: 5px; 
+}
+
+.link-container .twitter-icon {
+    width: 50px; 
+    height: 50px; 
+    vertical-align: middle; 
+    margin-right: 5px; 
+}
+
+.link-container .youtube-icon {
+    width: 50px; 
+    height: 50px; 
+    vertical-align: middle;
+    margin-right: 5px; 
+}
+
+footer {
+    background-color: #333; /* Grauer Hintergrund */
+    color: white;
+    padding: 20px 0; /* Polsterung oben und unten */
+    text-align: center; /* Text zentrieren */
+}
+
+.footer-bar {
+    max-width: 600px; /* Maximale Breite der Fußleiste */
+    margin: 0 auto; /* Zentriere die Fußleiste horizontal */
+}
+
+.footer-bar nav ul {
+    list-style-type: none; /* Entferne Aufzählungspunkte */
+    margin: 0;
+    padding: 0;
+}
+
+.footer-bar nav ul li {
+    display: inline; /* Inline-Listenelemente */
+    margin-right: 20px; /* Abstand zwischen den Navigationslinks */
+}
+
+.footer-bar nav ul li:last-child {
+    margin-right: 0; /* Entferne den rechten Abstand für das letzte Element */
+}
+
+.footer-bar nav ul li a {
+    text-decoration: none; /* Entferne Unterstreichung der Links */
+    color: white; /* Textfarbe */
+    font-weight: bold; /* Fettschrift */
+}
+

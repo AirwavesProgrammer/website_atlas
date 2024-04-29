@@ -56,7 +56,7 @@ h1, h2 {
 
 /* Stile für das Bild innerhalb der Kategorie "Partnerschaften" */
 .partnership-image img {
-    max-width: 200px; /* Breite des Bildes reduzieren */
+    max-width: 150px; /* Breite des Bildes reduzieren */
     height: auto;
     border-radius: 5px;
 }
