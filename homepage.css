@@ -192,9 +192,10 @@ footer {
     }
 
     .media-container video {
+        max-width: 90%;
         margin-top: 10px;
         margin-left: 5px;
-       max-width: 90%;
+        margin-right: 5px;
         height: auto;
     }
 }
