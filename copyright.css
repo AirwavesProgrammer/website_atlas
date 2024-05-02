@@ -2,56 +2,51 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f5f5f5; /* Hintergrundfarbe für den gesamten Body */
-    max-width: 100%; /* Maximale Breite des Body auf 100% des Viewports setzen */
-    overflow-x: hidden; /* Horizontales Scrollen unterdrücken */
-    overflow-y: scroll; /* Vertikales Scrollen aktivieren */
+    background-color: #C6DCBA; 
+    max-width: 100%; 
+    overflow-x: hidden; 
+    overflow-y: scroll; 
 }
 
-
 h2 {
-    color: #333; /* Farbe für Überschriften */
+    color: #333; 
 }
 
 p {
-    color: #555; /* Farbe für normalen Text */
+    color: #555; 
 }
 
 a {
-    color: #fff; /* Farbe für Links */
+    color: #fff; 
     text-decoration: none;
 }
 
-/* Header-Stil */
-
-/* CSS für Header */
-
 header {
-    background-color: #333; /* Hintergrundfarbe des Headers */
-    color: #fff; /* Textfarbe des Headers */
-    padding: 10px 20px; /* Innenabstand des Headers */
-    text-align: center; /* Zentriere den Text horizontal im Header */
-    height: 50px; /* Höhe des Headers */
+    background-color: #333; 
+    color: #fff; 
+    padding: 10px 20px; 
+    text-align: center; 
+    height: 50px; 
 }
 
 header h1 {
-    margin-top: 5px; /* Verschiebe das <h1>-Element um 5px nach oben */
+    margin-top: 5px; 
 }
 
 nav {
     background-color: #333;
     padding: 10px 0;
     text-align: center;
-    margin-top: -20px; /* Negative margin, um die Lücke zwischen Titel und Navigation zu verringern */
+    margin-top: -20px; 
 }
 
 nav a {
     margin: 0 15px;
-    color: #fff; /* Farbe für Navigationslinks */
+    color: #fff; 
 }
 
 section {
-    background-color: #fff;
+    background-color: #D7E4C0;
     padding: 20px;
     border-radius: 5px;
     margin-bottom: 20px;
@@ -75,15 +70,13 @@ section {
     margin-right: 10px;
 }
 
-/* CSS für das Discord-Logo */
-
 .discord-logo {
-    position: fixed; /* Das Logo bleibt an einer festen Position auf dem Bildschirm */
-    bottom: 20px; /* Abstand zum unteren Bildschirmrand */
-    right: 20px; /* Abstand zum rechten Bildschirmrand */
-    z-index: 1000; /* Stelle sicher, dass das Logo über anderen Inhalten liegt */
-    display: flex; /* Verwende Flexbox für das Logo */
-    align-items: center; /* Zentriere das Logo vertikal */
+    position: fixed; 
+    bottom: 20px;
+    right: 20px; 
+    z-index: 1000; 
+    display: flex; 
+    align-items: center; 
 }
 
 .discord-logo img {

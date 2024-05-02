@@ -4,6 +4,7 @@ body, html {
     display: flex;
     flex-direction: column;
     font-family: Arial, sans-serif; 
+    background-color: #E1F7F5;
 }
 
 header {
@@ -36,6 +37,7 @@ h2 {
     padding: 10px;
     margin-bottom: 30px;
     position: relative; 
+    background-color: #FFFADD;
 }
 
 .item strong {
@@ -50,7 +52,7 @@ h2 {
 }
 
 .label {
-    background-color: lightblue; 
+    background-color: #8294C4; 
     color: white;
     font-size: 24px;
     padding: 10px; 
@@ -96,6 +98,7 @@ h2 {
     padding: 10px;
     margin-bottom: 30px;
     position: relative; 
+    background-color: #FFFADD;
 }
 
 .single-item strong {
