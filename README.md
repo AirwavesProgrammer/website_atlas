@@ -6,10 +6,11 @@ Dies ist die offizielle Website für Atlas, wo du Informationen zu allen wichtig
 
 **Features**
 
-Homepage: erfahre alles Wichtige über ATLAS auf einem Blick
-Koordinaten: eine genaue Beschreibung findest du im ATLAS-Discord
-Copyright: die Nutzung der Website und des Codes unterliegen dem Copy- bzw. Datenschutzrecht der deutschen Gesetze
-Responsive Design: Die Website passt sich automatisch an verschiedene Bildschirmgrößen an, sodass sie auf Desktops, Tablets und Smartphones optimal aussieht.
+- Homepage: erfahre alles Wichtige über ATLAS auf einem Blick
+- Koordinaten: eine genaue Beschreibung findest du im ATLAS-Discord
+- Copyright: die Nutzung der Website und des Codes unterliegen dem Copy- bzw. Datenschutzrecht der deutschen Gesetze
+- Partnerschaften: sieh alle Partnerschaften und die dazugehörigen Infos
+- Responsive Design: Die Website passt sich automatisch an verschiedene Bildschirmgrößen an, sodass sie auf Desktops, Tablets und Smartphones optimal aussieht.
 
 **Installation und Nutzung**
 
@@ -19,9 +20,9 @@ Responsive Design: Die Website passt sich automatisch an verschiedene Bildschirm
 
 **Technologien**
 
-HTML5: Für die Struktur der Website.
-CSS3: Für das Styling und Layout.
-JavaScript (ES6+): Für Interaktivität und dynamische Elemente.
+- HTML5: Für die Struktur der Website.
+- CSS3: Für das Styling und Layout.
+- JavaScript (ES6+): Für Interaktivität und dynamische Elemente.
 
 Beiträge sind willkommen! Wenn du einen Fehler gefunden hast, eine neue Funktion vorschlagen möchtest oder den Code verbessern willst, erstelle bitte ein Issue oder sende einen Pull Request.
 
