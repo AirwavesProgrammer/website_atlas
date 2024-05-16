@@ -1,4 +1,4 @@
-# Sicherheitsrichtlinie für Atlas Website**
+# Sicherheitsrichtlinie für Atlas Website
 - Wir nehmen die Sicherheit unserer Website ernst und sind bestrebt, ein sicheres Erlebnis für alle Nutzer zu gewährleisten. Diese Richtlinie beschreibt, wie Sicherheitslücken gemeldet werden können und wie wir darauf reagieren.
 
 **Verantwortungsvolle Offenlegung**
